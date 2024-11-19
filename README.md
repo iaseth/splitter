@@ -37,6 +37,7 @@ Row 3 of 3 rows:
 ```
 
 The command generated the 9 images shown below:
+
 ![Output Image 1](output/animated-female-faces_1_1.jpg)
 ![Output Image 2](output/animated-female-faces_1_2.jpg)
 ![Output Image 3](output/animated-female-faces_1_3.jpg)
