@@ -45,7 +45,7 @@ def split_image_into_files(
 				output_filename = f"{prefix}_{row+1}_{col+1}.{output_format}"
 				output_filepath = os.path.join(output_directory, output_filename)
 				cropped_img.save(output_filepath)
-				print(f"\t\tSaved: {output_filepath}")
+				print(f"\t\tSaved: {output_filepath} [{cropped_img.size[0]}x{cropped_img.size[1]}]")
 	except Exception as e:
 		print(f"Error: {e}")
 

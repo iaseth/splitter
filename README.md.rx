@@ -10,27 +10,7 @@ You can use `splitter` to split this image into 9 separate files:
 
 This will produce the following output:
 ```
-Row 1 of 3 rows:
-	Column 1 of 3 columns:
-		Saved: animated-female-faces_1_1.jpg
-	Column 2 of 3 columns:
-		Saved: animated-female-faces_1_2.jpg
-	Column 3 of 3 columns:
-		Saved: animated-female-faces_1_3.jpg
-Row 2 of 3 rows:
-	Column 1 of 3 columns:
-		Saved: animated-female-faces_2_1.jpg
-	Column 2 of 3 columns:
-		Saved: animated-female-faces_2_2.jpg
-	Column 3 of 3 columns:
-		Saved: animated-female-faces_2_3.jpg
-Row 3 of 3 rows:
-	Column 1 of 3 columns:
-		Saved: animated-female-faces_3_1.jpg
-	Column 2 of 3 columns:
-		Saved: animated-female-faces_3_2.jpg
-	Column 3 of 3 columns:
-		Saved: animated-female-faces_3_3.jpg
+{{ "log.txt" | File }}
 ```
 
 The command generated the 9 images shown below:

@@ -13,26 +13,27 @@ python3 splitter.py animated-female-faces.jpg rows=3 cols=3
 This will produce the following output:
 ```
 Row 1 of 3 rows:
-    Column 1 of 3 columns:
-        Saved: animated-female-faces_1_1.jpg
-    Column 2 of 3 columns:
-        Saved: animated-female-faces_1_2.jpg
-    Column 3 of 3 columns:
-        Saved: animated-female-faces_1_3.jpg
+	Column 1 of 3 columns:
+		Saved: animated-female-faces_1_1.jpg [341x341]
+	Column 2 of 3 columns:
+		Saved: animated-female-faces_1_2.jpg [341x341]
+	Column 3 of 3 columns:
+		Saved: animated-female-faces_1_3.jpg [341x341]
 Row 2 of 3 rows:
-    Column 1 of 3 columns:
-        Saved: animated-female-faces_2_1.jpg
-    Column 2 of 3 columns:
-        Saved: animated-female-faces_2_2.jpg
-    Column 3 of 3 columns:
-        Saved: animated-female-faces_2_3.jpg
+	Column 1 of 3 columns:
+		Saved: animated-female-faces_2_1.jpg [341x341]
+	Column 2 of 3 columns:
+		Saved: animated-female-faces_2_2.jpg [341x341]
+	Column 3 of 3 columns:
+		Saved: animated-female-faces_2_3.jpg [341x341]
 Row 3 of 3 rows:
-    Column 1 of 3 columns:
-        Saved: animated-female-faces_3_1.jpg
-    Column 2 of 3 columns:
-        Saved: animated-female-faces_3_2.jpg
-    Column 3 of 3 columns:
-        Saved: animated-female-faces_3_3.jpg
+	Column 1 of 3 columns:
+		Saved: animated-female-faces_3_1.jpg [341x341]
+	Column 2 of 3 columns:
+		Saved: animated-female-faces_3_2.jpg [341x341]
+	Column 3 of 3 columns:
+		Saved: animated-female-faces_3_3.jpg [341x341]
+
 ```
 
 The command generated the 9 images shown below:
@@ -112,7 +113,7 @@ def split_image_into_files(
 				output_filename = f"{prefix}_{row+1}_{col+1}.{output_format}"
 				output_filepath = os.path.join(output_directory, output_filename)
 				cropped_img.save(output_filepath)
-				print(f"\t\tSaved: {output_filepath}")
+				print(f"\t\tSaved: {output_filepath} [{cropped_img.size[0]}x{cropped_img.size[1]}]")
 	except Exception as e:
 		print(f"Error: {e}")
 
