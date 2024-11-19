@@ -1,0 +1,75 @@
+
+# splitter
+`Splitter` is a python program that splits any grid-like image into separate files.
+Consider the below image:
+
+![Input Image](animated-female-faces.jpg)
+
+You can use `splitter` to split this image into 9 separate files:
+=> python3 splitter.py animated-female-faces.jpg rows=3 cols=3
+
+This will produce the following output:
+```
+Row 1 of 3 rows:
+	Column 1 of 3 columns:
+		Saved: animated-female-faces_1_1.jpg
+	Column 2 of 3 columns:
+		Saved: animated-female-faces_1_2.jpg
+	Column 3 of 3 columns:
+		Saved: animated-female-faces_1_3.jpg
+Row 2 of 3 rows:
+	Column 1 of 3 columns:
+		Saved: animated-female-faces_2_1.jpg
+	Column 2 of 3 columns:
+		Saved: animated-female-faces_2_2.jpg
+	Column 3 of 3 columns:
+		Saved: animated-female-faces_2_3.jpg
+Row 3 of 3 rows:
+	Column 1 of 3 columns:
+		Saved: animated-female-faces_3_1.jpg
+	Column 2 of 3 columns:
+		Saved: animated-female-faces_3_2.jpg
+	Column 3 of 3 columns:
+		Saved: animated-female-faces_3_3.jpg
+```
+
+The command generated the 9 images shown below:
+![Output Image 1](output/animated-female-faces_1_1.jpg)
+![Output Image 2](output/animated-female-faces_1_2.jpg)
+![Output Image 3](output/animated-female-faces_1_3.jpg)
+![Output Image 4](output/animated-female-faces_2_1.jpg)
+![Output Image 5](output/animated-female-faces_2_2.jpg)
+![Output Image 6](output/animated-female-faces_2_3.jpg)
+![Output Image 7](output/animated-female-faces_3_1.jpg)
+![Output Image 8](output/animated-female-faces_3_2.jpg)
+![Output Image 9](output/animated-female-faces_3_3.jpg)
+
+
+I am using {{ gh.link("iaseth/readmix", "readmix") }} for generating this README.
+You can view the source file [here](https://github.com/iaseth/splitter/blob/master/README.md.rx).
+
+
+## Args
+In addition to the input file path, `splitter` accepts the following optional arguments:
+
+| `Arg`    | `Shortcut` | `Description` |
+| -------- | ---- | ------------------- |
+| `rows`   | `r`  | Number of rows.                         |
+| `cols`   | `c`  | Number of columns.                      |
+| `output` | `o`  | Output directory path.                  |
+| `prefix` | `p`  | Prefix to be added to each output file. |
+| `format` | `f`  | Output format and file extension.       |
+
+
+## Code
+```py
+{{ "splitter.py" | File }}
+```
+
+
+## License
+{{ "LICENSE.md" | File }}
+
+
+{{ giveCredit() }}
+
