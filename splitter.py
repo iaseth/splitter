@@ -84,7 +84,7 @@ def main():
 					cols = int(value)
 				case 'output' | 'o':
 					output_directory = value
-				case 'prefix' | 'p':
+				case 'prefix':
 					prefix = value
 				case 'format' | 'f':
 					output_format = value

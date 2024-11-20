@@ -38,7 +38,7 @@ In addition to the input file path, `splitter` accepts the following optional ar
 | `rows`   | `r`  | Number of rows.                         |
 | `cols`   | `c`  | Number of columns.                      |
 | `output` | `o`  | Output directory path.                  |
-| `prefix` | `p`  | Prefix to be added to each output file. |
+| `prefix` |      | Prefix to be added to each output file. |
 | `format` | `f`  | Output format and file extension.       |
 
 

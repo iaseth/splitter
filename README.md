@@ -61,7 +61,7 @@ In addition to the input file path, `splitter` accepts the following optional ar
 | `rows`   | `r`  | Number of rows.                         |
 | `cols`   | `c`  | Number of columns.                      |
 | `output` | `o`  | Output directory path.                  |
-| `prefix` | `p`  | Prefix to be added to each output file. |
+| `prefix` |      | Prefix to be added to each output file. |
 | `format` | `f`  | Output format and file extension.       |
 
 
@@ -153,7 +153,7 @@ def main():
 					cols = int(value)
 				case 'output' | 'o':
 					output_directory = value
-				case 'prefix' | 'p':
+				case 'prefix':
 					prefix = value
 				case 'format' | 'f':
 					output_format = value
